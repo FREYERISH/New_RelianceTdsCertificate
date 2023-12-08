@@ -1,0 +1,52 @@
+﻿
+
+
+.Parent {
+    
+   
+    
+    /* Center vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: yellow;*/
+}
+
+.child {
+    height: 300px;
+    width: 400px;
+   /* background-color: red;*/
+    outline: solid 2px black;
+}
+
+.Upload {
+    /*background-color: green;*/
+    height: 100px;
+}
+
+.admin {
+    
+    /*background-color: orange;*/
+    outline: solid 1px black;
+    justify-content: center;
+}
+
+.button {
+    width: 170px;
+    height: 50px;
+}
+
+.download{
+    /*background-color:purple;*/
+}
+
+.Message {
+   /* background-color: hotpink;*/
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    border: solid 1px black;
+
+    
+}

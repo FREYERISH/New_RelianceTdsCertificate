@@ -1,0 +1,148 @@
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 40px;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    border-radius: 50px;
+    background-color: #ffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+        background-color: #d8e2ff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.resend-otp-button {
+    cursor: pointer;
+    text-decoration: none;
+    color: #007bff;
+    border: 1px solid #007bff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: #e6f0fd;
+    }
+}
+
+
+.resend-otp-link:hover {
+    text-decoration: underline;
+}
+.get-otp-btn {
+    margin-left: 10px;
+    background-color: #0099ff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    height:40px;
+}
+
+
+button, .button {
+    background-color: #0099ff;
+    color: white;
+    border: none;
+    border-radius: 2.5rem;
+    
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.06em;
+    line-height: 1.2;
+    padding: 1rem 2.5rem;
+    position: relative;
+    text-decoration: none;
+    text-transform: none;
+
+    &::after {
+        content: "";
+        display: block;
+        position: relative;
+        top: 2px;
+        width: 100%;
+        height: 1px;
+        background-color: currentColor;
+        transform-origin: 0;
+        transition: all 0.3s ease 0.2s;
+        transform: translateX(0%) scaleX(0);
+    }
+
+    &:hover {
+        &::after {
+            animation: underlineIn 0.7s ease-out;
+            transform: translateX(0%) scaleX(1);
+        }
+    }
+}
+
+@keyframes underlineIn {
+    0% {
+        transform: translateX(0%) scaleX(0);
+    }
+
+    40% {
+        transform: translateX(0%) scaleX(1);
+    }
+
+    60% {
+        transform: translateX(100%) scaleX(0);
+    }
+
+    70% {
+        transform: translateX(0%) scaleX(0);
+    }
+
+    100% {
+        transform: translateX(0%) scaleX(1);
+    }
+}
+
+:root {
+    --color-bg: whitesmoke;
+}
+
+body {
+    background: var(--color-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/** {
+    margin-left: 10px;
+    margin-right: 10px;
+}*/
+

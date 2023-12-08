@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RelianceTdsCertificate.Web", "RelianceTdsCertificate\RelianceTdsCertificate.Web.csproj", "{68D85CC6-BA2C-4551-8DF7-11FB5E65E5F9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RelianceTdsCertificate.Models", "RelianceTdsCertificate.Models\RelianceTdsCertificate.Models.csproj", "{C9AE28D7-19C5-4F89-B27A-36A26532B874}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RelianceTdsCertificate.DataAccess", "RelianceTdsCertificate.DataAccess\RelianceTdsCertificate.DataAccess.csproj", "{7A801D58-BB7A-4346-A702-56F9DDEC790F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RelianceTdsCertificate.Service", "RelianceTdsCertificate.Service\RelianceTdsCertificate.Service.csproj", "{976D2CFC-DE07-4BF7-8977-14EE1D5BF26C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RelianceTdsCertificate.Api", "RelianceTdsCertificate.Api\RelianceTdsCertificate.Api.csproj", "{18FB7BFE-F3AC-4DB9-B56A-DA93FAD6610C}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "RelianceTdsCertificate.ReactWeb", "RelianceTdsCertificate.ReactWeb\RelianceTdsCertificate.ReactWeb.esproj", "{DC7E4DC4-4ECD-4637-8207-704F515F6206}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68D85CC6-BA2C-4551-8DF7-11FB5E65E5F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68D85CC6-BA2C-4551-8DF7-11FB5E65E5F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68D85CC6-BA2C-4551-8DF7-11FB5E65E5F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68D85CC6-BA2C-4551-8DF7-11FB5E65E5F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9AE28D7-19C5-4F89-B27A-36A26532B874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9AE28D7-19C5-4F89-B27A-36A26532B874}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9AE28D7-19C5-4F89-B27A-36A26532B874}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9AE28D7-19C5-4F89-B27A-36A26532B874}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A801D58-BB7A-4346-A702-56F9DDEC790F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A801D58-BB7A-4346-A702-56F9DDEC790F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A801D58-BB7A-4346-A702-56F9DDEC790F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A801D58-BB7A-4346-A702-56F9DDEC790F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{976D2CFC-DE07-4BF7-8977-14EE1D5BF26C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{976D2CFC-DE07-4BF7-8977-14EE1D5BF26C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{976D2CFC-DE07-4BF7-8977-14EE1D5BF26C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{976D2CFC-DE07-4BF7-8977-14EE1D5BF26C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18FB7BFE-F3AC-4DB9-B56A-DA93FAD6610C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18FB7BFE-F3AC-4DB9-B56A-DA93FAD6610C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18FB7BFE-F3AC-4DB9-B56A-DA93FAD6610C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18FB7BFE-F3AC-4DB9-B56A-DA93FAD6610C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC7E4DC4-4ECD-4637-8207-704F515F6206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC7E4DC4-4ECD-4637-8207-704F515F6206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC7E4DC4-4ECD-4637-8207-704F515F6206}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DC7E4DC4-4ECD-4637-8207-704F515F6206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC7E4DC4-4ECD-4637-8207-704F515F6206}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC7E4DC4-4ECD-4637-8207-704F515F6206}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {458447F5-E80F-4714-A19D-99092700BAAB}
+	EndGlobalSection
+EndGlobal

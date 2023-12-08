@@ -1,0 +1,76 @@
+﻿.upload-docs-card {
+    margin: 20% 0;
+    padding: 35px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background-color: #ffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    &:hover {
+        background-color: #d8e2ff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.upload-docs-heading {
+    font-size: 32px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.upload-docs-file-picker {
+    margin: 20px 0;
+}
+
+.upload-docs-bulk-upload-button,
+.upload-docs-download-report-button {
+    margin: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: #0069d9;
+    }
+
+    &:active {
+        background-color: #0056bd;
+    }
+}
+
+input[type="file"]::file-selector-button {
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    margin-right: 16px;
+    transition: background-color 200ms;
+
+    &:hover {
+        background-color: #f3f4f6;
+    }
+
+    &:active {
+        background-color: #e5e7eb;
+    }
+}
+            

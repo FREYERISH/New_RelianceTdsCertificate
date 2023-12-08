@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+    @* <link href="@Url.Content("~/css/Login.css")" rel="stylesheet" /> *@
+    <link rel="stylesheet" href="~/css/Login.css" asp-append-version="true" />
+</head>
+
+<body>
+
+
+<section class="vh-100">
+    <div class="container py-5 h-100">
+        <div class="row d-flex align-items-center justify-content-center h-100">
+            <div class="col-md-8 col-lg-7 col-xl-6">
+                <img src="~/images/LoginScreen.jpg"
+                     class="img-fluid" alt="Phone image">
+            </div>
+
+            <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+
+
+                    <form id="otpForm" method="post" action="/Login/GetOtp">
+                        <label for="panNumber">PAN Number:</label>
+                        <input type="text" id="panNumber" name="empPanNumber" required>
+                        <br>
+                        <button type="button" id="getOTP">Get OTP</button>
+                    </form>
+
+
+                <form method="post" action="/Login/SubmitOtp">
+                    
+                    <label for="otp">OTP:</label>
+                    <input type="text" id="otp" name="otp" required>
+                    <br>
+                    
+                    <button type="submit">Submit</button>
+                    
+                    <br>
+                    
+
+                </form>
+               
+                </div>
+            <a asp-controller="Admin" asp-action="Upload" class="btn btn-primary">Move to Admin Upload</a>
+
+            </div>
+        </div>
+    
+</section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#getOTP').click(function () {
+                var panNumber = $('#panNumber').val(); // Get the PAN Number
+
+                $.ajax({
+                    url: '/Login/GetOtp',
+                    type: 'POST',
+                    data: { empPanNumber: panNumber }, // Pass the PAN Number as data
+                    success: function () {
+                        alert('OTP sent successfully!');
+                    },
+                    error: function () {
+                        alert('Failed to send OTP!');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
